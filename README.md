@@ -11,3 +11,6 @@ Conseguir ler/obter pequenas partes dos dados, e a partir desses pedaços já co
 | `func`              | `desc`                                          |
 | ------------------- | ----------------------------------------------- |
 | `Stream.pipe(args)` | encaminha tudo que está recebendo para **args** |
+| `Request`           | ReadableStream                                  |
+| `Response`          | WritableStream                                  |
+|                     |                                                 |
