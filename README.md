@@ -14,3 +14,7 @@ Conseguir ler/obter pequenas partes dos dados, e a partir desses pedaços já co
 | `Request`           | ReadableStream                                  |
 | `Response`          | WritableStream                                  |
 |                     |                                                 |
+
+- Buffers: Uma representação de um espaço na memória do computador, usado para transitar dados de forma rápida.
+    - os dados são armazenados para serem utilizados e de imediato removidos.
+    - guarda os dados de forma binária.
