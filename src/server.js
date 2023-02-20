@@ -16,7 +16,7 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  return res.end("Hello world");
+  return res.end("Uncaught-exception");
 });
 
 server.listen(3333, () => {

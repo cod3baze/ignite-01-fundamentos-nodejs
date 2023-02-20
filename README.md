@@ -18,3 +18,17 @@ Conseguir ler/obter pequenas partes dos dados, e a partir desses pedaços já co
 - Buffers: Uma representação de um espaço na memória do computador, usado para transitar dados de forma rápida.
     - os dados são armazenados para serem utilizados e de imediato removidos.
     - guarda os dados de forma binária.
+
+## Routes
+
+- Query parameters = URL Stateful => filtros, paginação, não-obrigatório
+
+  - http://localhost:3333/users?userID=1&name=eliasalexandre
+
+- Route parameters = Identificação de recursos
+
+  - GET: http://localhost:3333/users/1
+
+- Request Body = Envio de informações de im formulário
+
+  - Edição e remoção
