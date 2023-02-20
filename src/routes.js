@@ -9,10 +9,19 @@ export const routes = [
     method: "GET",
     path: buildRoutePath("/users"),
     handler: async (req, res) => {
+      const { search } = req.query;
+
       // Early return
       return res
         .setHeader("Content-type", "application/json")
-        .end(JSON.stringify(await database.select("users")));
+        .end(
+          JSON.stringify(
+            await database.select(
+              "users",
+              search ? { name: search, email: search } : null
+            )
+          )
+        );
     },
   },
   {
