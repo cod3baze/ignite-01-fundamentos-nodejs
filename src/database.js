@@ -25,6 +25,17 @@ export class Database {
     return data;
   }
 
+  async delete(table, identifier) {
+    if (Array.isArray(this.#database[table])) {
+      this.#database[table] = this.#database[table].filter(
+        (item) => item.id !== identifier
+      );
+    }
+
+    await this.#persist();
+    return identifier;
+  }
+
   async insert(table, data) {
     if (Array.isArray(this.#database[table])) {
       this.#database[table].push(data);
